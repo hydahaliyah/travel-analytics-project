@@ -15,7 +15,7 @@ st.markdown("---")
 # AUTOMATIC LOAD & CACHE DATA
 @st.cache_data
 def get_dashboard_data():
-    return load_and_clean_hotel_data(r"C:\Users\ASUS\travel-analytics-project\hotel_bookings.csv")
+    return load_and_clean_hotel_data("hotel_bookings.csv")
 
 df = get_dashboard_data()
 

@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 from clean_data import load_and_clean_hotel_data
 
 print("Loading and preparing data...")
-df = load_and_clean_hotel_data(r"C:\Users\ASUS\travel-analytics-project\hotel_bookings.csv")
+df = load_and_clean_hotel_data("hotel_bookings.csv")
 
 # 1. Select predictive features
 features = [

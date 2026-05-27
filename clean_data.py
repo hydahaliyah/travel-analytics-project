@@ -7,7 +7,7 @@ def load_and_clean_hotel_data(file_path: str = "hotels.csv") -> pd.DataFrame:
     and returns a polished DataFrame with calculated dashboard metrics.
     """
     # 1. Read local raw data (treating variations of NULL strings as proper NaNs)
-    df = pd.read_csv(r"C:\Users\ASUS\travel-analytics-project\hotel_bookings.csv", na_values=['NULL', 'Null', 'null', ' '])
+    df = pd.read_csv("hotel_bookings.csv", na_values=['NULL', 'Null', 'null', ' '])
     cleaned_df = df.copy()
     
     # 2. Handle Missing Values & Data Types
